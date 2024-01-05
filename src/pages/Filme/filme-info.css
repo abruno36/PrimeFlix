@@ -1,7 +1,7 @@
 
 
 .filme-info{
-  margin: 14px auto;
+  margin: 0 auto;
   margin-top: 18px;
   display: flex;
   flex-direction: column;
@@ -55,4 +55,15 @@
 
 .area-buttons a:hover{
   color: #FFF;
+}
+
+@media(max-width: 420px){
+  .filme-info{
+    margin: 0 15px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 8px;
+  }
 }
