@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import './filme-info.css';
 import api from '../../services/api';
 
@@ -46,13 +47,13 @@ function Filme(){
     //some - método no javascript para veritficar na sua lista se tem pelo menos 1 item com a comparação verificada. Devolve true ou false.
 
     if(hasFilme){
-      alert("ESSE FILME JÁ ESTA NA LISTA!");
+      toast.warn("Este filme ja está na sua lista!");
       return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
-    alert("FILME SALVO COM SUCESSO!")
+    toast.success("Filme salvo com sucesso!");
 
   }
 
