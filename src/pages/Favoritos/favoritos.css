@@ -57,8 +57,8 @@
 
   .meus-filmes span{
     font-size: 12px;
-    max-width: 210px;
-    margin-left: 10px;
+    max-width: 200px;
+    margin-left: 12px;
   }
 
   .meus-filmes div a {
@@ -69,7 +69,7 @@
   }
 
   .meus-filmes div button {
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   .meus-filmes h1{
