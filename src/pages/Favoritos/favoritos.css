@@ -39,10 +39,6 @@
 }
 
 @media(max-width: 420px){
-  .meus-filmes h1{
-    margin-bottom: 14px;
-  }
-
   .meus-filmes ul{
     width: 350px;
   }
